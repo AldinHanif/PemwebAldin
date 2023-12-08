@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<!doctype html>
+    <html lang="en">
+      <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+        <title>Hello, world!</title>
+        <style>
+            .navbar{
+                padding-left: 500px;
+            }
+            .from.inlane{
+                padding-right: 300px;
+            }
+        </style>
+      </head>
+      <body>
+         <!-- Ini awal navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="About.php">About me</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+     
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-center">
+            <img class="rounded-circle" width="300" height="300" src="data:image/jpeg;base64,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" alt="">
+          <h1 class="display-4">Manchester United F.C.</h1>
+          <p class="lead">Manchester United Football Club adalah sebuah klub sepak bola profesional yang berbasis di Old Trafford, Manchester Raya, yang bermain di Liga Utama Inggris dengan gelar Liga Utama Inggris terbanyak sepanjang masa. Didirikan sebagai Newton Heath LYR Football Club pada tahun 1878, klub ini berganti nama menjadi Manchester United pada 1902 dan pindah ke Old Trafford pada tahun 1910.
+            </p>
+        </div>
+      </div>
+    
+    
+      
+    <div class="container text-center" id="About">
+    
+    <div class="row">
+    <div class="col">
+    <h1>About</h1>
+    </div>
+    </div>
+    
+    <div class="row">
+        <div class="col text-justify">
+            Manchester United telah memenangkan banyak trofi di sepak bola Inggris, termasuk 20 gelar Liga—terbanyak dalam sejarah, 12 gelar Piala FA, 6 gelar Piala Liga dan 21 gelar Community Shield FA—juga terbanyak dalam sejarah. Klub ini juga telah memenangkan tiga gelar Piala/Liga Champions, satu Liga Eropa UEFA, satu Piala Winners UEFA, satu Piala Super UEFA, satu Piala Interkontinental, dan satu Piala Dunia Antarklub FIFA—klub Inggris pertama yang menjuarai ajang ini. Pada musim 1998–1999, klub ini memenangkan treble (trigelar) dari Liga Utama, Piala FA, dan Liga Champions; prestasi ini belum pernah terjadi sebelumnya untuk klub Inggris. Manchester United juga merupakan salah satu klub tersukses sepanjang masa di Inggris. Bencana Udara München 1958 merenggut nyawa delapan pemain. Pada tahun 1968, di bawah manajemen Matt Busby, Manchester United adalah klub sepak bola Inggris pertama yang memenangkan Piala Eropa. Sedangkan Alex Ferguson memenangkan total 38 gelar utama, dari bulan November 1986 sampai Mei 2013, ketika ia mengumumkan pensiun setelah 26 tahun di klub.</div>
+        <div class="col text-justify">
+            Rekan senegaranya David Moyes diangkat sebagai penggantinya pada tanggal 9 Mei 2013 namun ia dinilai gagal dan tak lama kemudian dipecat.
+            Manchester United adalah klub sepak bola terkaya ketiga di dunia untuk 2011–12 dalam hal pendapatan, dengan pendapatan tahunan sebesar €395.9 juta, dan kedua klub paling berharga tahun 2013, senilai $3.165 miliar. Pada bulan Januari 2015 lalu, Manchester United dinobatkan sebagai klub terkaya kedua di dunia, Ini adalah salah satu tim sepak bola yang paling banyak didukung di dunia. Setelah sahamnya tercatat di London Stock Exchange pada tahun 1991, klub itu dibeli oleh Malcolm Glazer pada Mei 2005 di kesepakatan menilai klub di hampir £800 juta.Pada bulan Agustus 2012, Manchester United melakukan penawaran umum perdana di Bursa Efek New York.    </div>
+    
+    </div>
+    
+    
+    <div class="card-deck mt-5 ml-5 ml-5 mr-5">
+        <div class="card">
+          <img class="card-img-top" src="https://geotimes.id/wp-content/uploads/2017/08/Fancs-Manchester-United-joe-ie-696x385.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">The Reds</h5>
+            <p class="card-text col text-justify">Mengutip Goal International, manajer legendaris Manchester United, Sir Matt Busby, adalah sosok di balik munculnya julukan Setan Merah bagi klub yang bermarkas di Stadion Old Trafford tersebut. Busby datang ke Manchester United pada 1945. Selama periode kepelatihannya hingga 1969, pelatih kelahiran Skotlandia itu berhasil membawa Man United meraih kesuksesan. 
+              Di tangan Busby, Manchester United mampu tampil garang di atas lapangan meski dihuni oleh pemain-pemain muda. Sejak kedatangan Busby hingga musim 1956-1957, Man United sukses meraih satu trofi Piala FA dan tiga gelar juara Liga Inggris. Penampilan apik para pemain muda di bawah asuhan Matt Busby membuat skuad Manchester United saat itu mendapat julukan The Busby Babes alias Bocah-bocah Busby.
+              Setelah terjadinya Tragedi Munich 1958 yang merenggut 23 nyawa termasuk delapan pemain Manchester United, julukan The Busby Babes dinilai tidak pantas digunakan lagi. Busby yang selamat dari tragedi tersebut coba membangun ulang kejayaan Manchester United. Ia lantas mencari julukan baru untuk timnya. Busby kemudian mendapatkan inspirasi dari julukan tim rugby Salford, sebuah kota yang masih masuk dalam wilayah Greater Manchester. Pada era 1930-an, tim rugby yang juga memiliki seragam tanding berwarna merah itu diundang untuk melakoni tur ke Perancis. Di sana, mereka mampu memenangi semua pertandingan sehingga mendapatkan julukan Les Diables Rouges atau The Red Devils dalam bahasa Inggris oleh jurnalis setempat. Busby menyukai julukan tersebut karena "Devils" dianggapnya lebih menakutkan ketimbang "Babes". Logo Setan Merah kemudian diadopsi ke matchday programme dan syal pada hari pertandingan.
+            </p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="https://www.telegraph.co.uk/content/dam/football/2022/03/14/TELEMMGLPICT000000256527062_trans_NvBQzQNjv4Bq5xQKRFy_kkTBfDozNlo-oJ0J162pmY1eSHUnwSaoTd0.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Old Trafford</h5>
+            <p class="card-text col text-justify">Old Trafford adalah sebuah stadion sepak bola yang berlokasi di Old Trafford, Greater Manchester, Inggris, dan merupakan markas klub Manchester United. Dengan kapasitas sekitar 76.000 kursi,stadion ini merupakan stadion terbesar ketiga dan stadion sepak bola terbesar kedua di Inggris setelah Stadion Wembley, serta stadion kesembilan terbesar di Eropa.Stadion ini terletak sekitar 05 mil (8.000 m) dari Lapangan Kriket Old Trafford dan stasiun trem terdekat.
+    
+    Old Trafford yang dijuluki "The Theatre of Dreams" oleh Sir Bobby Charlton,telah menjadi markas MU sejak 1910, walau sejak 1941 hingga 1949, klub berbagi Maine Road dengan rival lokal Manchester City pasca kerusakan akibat pengeboman pada Perang Dunia II. Old Trafford mengalami beberapa kali ekspansi pada 1990-an dan 2000-an, termasuk penambahan tambahan tingkat di Tribune Utara, Barat, dan Timur, yang membuat stadion kembali ke kapasitas aslinya, 80.000. Ekspansi ke depannya dapat termasuk penambahan tingkat kedua di Tribune Selatan, yang dapat meningkatkan kapasitas menjadi 90.000. Rekor kehadiran stadion tercatat pada 1939, saat 76.962 orang menghadiri semifinal Piala FA antara Wolverhampton Wanderers dan Grimsby Town.
+    
+    Old Trafford menyelenggarakan semifinal Piala FA, pertandingan Inggris, pertandingan pada Piala Dunia 1966 dan Piala Eropa 1996, serta Final Liga Champions UEFA 2003, demikian pula dengan pertandingan tahunan liga rugbi, Grand Final Liga Super serta dua final Piala Dunia Liga Rugbi. Stadion ini juga menjadi penyelenggara cabang sepak bola pada Olimpiade Musim Panas 2012, termasuk sepak bola internasional wanita untuk pertama kalinya dalam sejarahnya.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="https://asset-2.tstatic.net/style/foto/bank/images/man-united_20170812_200628.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">GGMU</h5>
+            <p class="card-text col text-justify">Kata-kata "Glory Glory" sejatinya tidak hanya identik dengan Manchester United. Glory Glory berasal dari lagu berjudul "Battle Hymn of the Republic" yang ditulis oleh penyair dan penulis asal Amerika Serikat, Julia Ward Howe, pada 1861.Lagu yang juga dikenal dengan judul "Mine Eyes Have Seen the Glory" itu merupakan lagu bertema patriotisme yang populer di luar Amerika Serikat. Howe menulis lirik lagu tersebut pada 1861 dan dimuat untuk pertama kali di majalah The Atlantic Monthly pada 1862. "Battle Hymn of the Republic" merupakan lagu tentang keagungan Tuhan dengan salah satu penggalan liriknya berbunyi "Glory, Glory, Hallelujah". Lagu tersebut kemudian menjadi populer di dunia sepak bola. Kata "Hallelujah" lantas diganti dengan nama atau sebutan klub. Klub asal Skotlandia, Hibernian, diyakini menjadi klub pertama yang menggunakan lagu "Glory Glory" tersebut. Hector Nicol dengan band Kelvin Country Dance merilis lagu "Glory, Glory to the Hibees" pada akhir 1950-an. Lagu "Glory Glory" juga populer di kalangan pendukung Tottenham Hotspur pada awal 1960-an dan tetap menggunakannya sebagai anthem hingga saat ini. Adapun di Manchester United, lagu "Glory Glory Man United" dirilis menjelang partai final Piala FA 1983 menghadapi Brighton & Hove Albion. Lagu tersebut ditulis oleh anggota band Hermits Herman, Frank Renshaw, dan direkam di Strawberry Studios di Stockport. "Glory Glory Man United" pun menjadi lagu wajib para pendukung Manchester United sejak awal 1980-an. Glory Glory Man United juga menjadi nama resmi poster majalah klub yang diluncurkan pada 1994. Pada 2007, versi penuh lagu "Glory Glory Man United" ditulis ulang dan direkam bersama The World Red Army, diroduseri oleh Will Robinson and Michael Graves. "Glory Glory Man United" pun menjadi lagu resmi Manchester United.
+    </p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+     <!-- Footer -->
+     <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+            <span>Ga usah sok kuat lah kidz</span>
+          </div>
+          <!-- Left -->
+      
+          <!-- Right -->
+          <div>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+      
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i>Company name
+                </h6>
+                <p>
+                  Manchester united
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Products
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset">sejarah</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">jersey</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">lagu kebangsaan</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">tiket</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Useful links
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset">Pricing</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Settings</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Orders</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Help</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  info@example.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2021 Copyright:
+          <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer --> 
+    
+    
+    
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ </body>
+</html>
